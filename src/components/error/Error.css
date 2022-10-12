@@ -9,5 +9,9 @@
 }
 .i-set{
     font-size: 120px;
+    color: yellow;
+    background-color: black;
+    border: 3px solid red;
+    border-radius: 100%;
     
 }
