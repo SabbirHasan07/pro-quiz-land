@@ -1,20 +1,28 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { LineChart, Line,XAxis, YAxis,Tooltip } from 'recharts';
+import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import './Statistics.css';
+
 
 const Statistics = () => {
     const data = useLoaderData();
-    const chatdata = data.data;
+    console.log(data);
     return (
         <div>
-            <div>
-                {
-                chatdata.map(cd=> console.log(cd))
-}
+            <div className='st-header'>
+                <h1>Statistics</h1>
+                <h3>"Chart"</h3>
             </div>
             
-            <div>
-                
+           
+            <div className='chart'>
+                <LineChart width={1000} height={400} data={data.data}>
+                    <Line type="monotone" dataKey="total" stroke="#006400" />
+                    <CartesianGrid stroke="#008080" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                </LineChart>
             </div>
         </div>
 
