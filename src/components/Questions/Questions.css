@@ -1,0 +1,28 @@
+.option-container{
+    border: 0;
+    margin: 20px;
+   
+    height: 60px;
+    width: 350px;
+    font-size: 14px;
+    background-color: rgb(102, 149, 149);
+    color: white;
+    border-radius: 6px;
+    
+
+}
+.option-container:hover{
+    background-color: rgb(223, 239, 252);
+    color: brown;
+   
+}
+.start-container{
+    background-color: rgb(243, 243, 243);
+    padding:100px;
+    border-radius: 12px;
+    margin: 120px;
+}
+.question-containet{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

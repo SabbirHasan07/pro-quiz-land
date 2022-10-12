@@ -1,0 +1,22 @@
+.header-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: aliceblue;
+}
+.btn-container{
+    display: flex;
+    justify-content:space-between ;
+    padding: 12px;
+    margin-right: 100px;
+    margin-top: 20px;
+    
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+
+}
+.link:hover{
+    color: brown;
+}
