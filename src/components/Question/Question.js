@@ -10,9 +10,9 @@ const Question = ({sqn,questions,options}) => {
     
 const hello = sqn =>{
   if(sqn===correctAnswer){
-    toast.success('🦄 Correct Answer!', {
+    toast.success('Correct Answer!', {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 600,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -23,7 +23,7 @@ const hello = sqn =>{
   }
   else{
     
-    toast.error('🦄 Worng Answer', {
+    toast.error(' Worng Answer', {
         position: "top-center",
         autoClose: 800,
         hideProgressBar: false,
