@@ -7,7 +7,7 @@ const Error = () => {
     return (
         <div>
             <div className='error-dg'>
-                <h1>404 Not Found</h1>
+                <h1>404 Not Found!!!</h1>
                 <div>
                     <FontAwesomeIcon className='i-set' icon={faFaceSadTear} />
                 </div>
