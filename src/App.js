@@ -2,11 +2,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
+import Error from './components/error/Error';
 
 import Main from './components/Main/Main';
 import Start from './components/Start/Start';
 import Statistics from './components/Statistics/Statistics';
 import Topics from './components/Topics/Topics';
+
 
 function App() {
   
@@ -37,8 +39,13 @@ function App() {
 
           },
           element: <Start></Start>
-        }
+        },
+        
       ]
+    },
+    {
+      path: "*",
+      element: <Error></Error>
     },
   ]);
   
